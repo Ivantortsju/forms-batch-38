@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace, Times, serif;
+}
+
+header {
+    width: 90%;
+    text-align: center;
+    border: black solid;
+
+}
+
+#description {
+    text-align: center;
+
+}
+
+
+
+body {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+}
+
+form {
+    margin-top: 20px;
+}
+
+legend {
+    margin-left: 10px;
+    font-weight: bold;
+
+}
+
+.disc {
+    margin-left: 10px;
+}
+
+.form-group-fieldset {
+
+    margin-top: 10px;
+    background-color: #4fcde7;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: row;
+    margin-left: 10px;
+    width: 100%;
+}
+
+.form-group,
+.gender-select {
+    display: flex;
+    flex-direction: row;
+}
+
+.form-group,
+label {
+    text-align: left;
+}
+
+.dropdown-group {
+    display: flex;
+    flex-direction: row;
+    margin-left: 10px;
+}
+
+.matrix-group {
+    display: flex;
+    margin-left: 10px;
+}
+
+.select-group {
+    display: flex;
+
+}
+
+.quality-grade {
+    display: flex;
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+.matrix-group,
+.box1 {
+    flex: 2 1 0;
+    text-align: left;
+}
+
+.matrix-group,
+.box2 {
+    flex: 1 1 0;
+    text-align: center;
+}
+
+.matrix-group,
+.box3 {
+    flex: 1 1 0;
+    text-align: center;
+}
+
+.matrix-group,
+.box4 {
+    flex: 1 1 0;
+    text-align: center;
+}
+
+.matrix-group,
+.box5 {
+    flex: 1 1 0;
+    text-align: center;
+}
+
+.tbox1 {
+    flex: 1 1 0;
+    text-align: left;
+}
+
+.tbox2 {
+    flex: 4 1 0;
+    text-align: left;
+}
+
+#tbox1 {
+    flex: 1 1 0;
+    text-align: left;
+}
+
+#tbox2 {
+    flex: 4 1 0;
+    text-align: left;
+}

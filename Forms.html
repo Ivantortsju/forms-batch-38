@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canteen Survey Form</title>
+    <link rel="stylesheet" href="formstyle.css">
+</head>
+
+
+<body>
+    <header id="title">
+        <h1>Canteen Survey Form</h1>
+        <p id="description">This information is to be used for academic purposes.<br>Information gathered under will
+            be keptconfidential.
+        </p>
+    </header>
+    <form action="#" id="survey-form">
+        <fieldset class="form-group-fieldset" form="survey-form" id="personal-">
+            <legend>Personal Information</legend>
+            <br>
+            <Div class="form-group">
+                <div class="tbox1"><label for="name-label" id="name">Name</label></div>
+                <div class="tbox2"><input type="text" name="name" id="name-label" placeholder="Type your name here"
+                        autocomplete="off" required></div>
+            </Div>
+            <Div class="form-group">
+                <div class="tbox1"> <label for="number-label" id="number">Age</label></div>
+                <div class="tbox2"><input type="number" name="age" id="number-label" step="1" min="18" max="60"
+                        placeholder="-" autocomplete="off" required></div>
+            </Div>
+            <div class="form-group">
+                <div class="tbox1"><label for="gender" id="gender-label">Gender</label></div>
+                <div class="tbox2">
+                    <div class="gender-select">
+                        <div class="select-group">
+                            <input type="radio" name="gender" value="male" id="male">
+                            <label for="male">Male</label>
+                        </div>
+                        <div class="select-group">
+                            <input type="radio" name="gender" value="female" id="female">
+                            <label for="female">Female</label>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <Div class="form-group">
+                <div class="tbox1"> <label for="email-label" id="Email">Email</label></div>
+                <div class="tbox2"><input type="email" name="email" id="email-label" placeholder="username@domain.com"
+                        autocomplete="off" required></div>
+            </Div>
+            <div class="dropdown-group">
+                <div class="tbox1"><label for="department-label" id="dropdown">Department</label></div>
+                <div class="tbox2"><select name="department" id="department-label">
+                        <option value selected disabled>Please your department</option>
+                        <option value="tantal" required>Tantal</option>
+                        <option value="chip-r" required>Chip-R</option>
+                        <option value="inductor" required>Inductor</option>
+                        <option value="mlcc" required>MLCC</option>
+                        <option value="support">Support</option>
+                    </select></div>
+            </div><br>
+        </fieldset>
+        <fieldset class="form-group-fieldset" form="survey-form">
+            <legend>Are you satisfied with the existing food service provided in our Canteen?</legend>
+            <br>
+            <div class="form-group">
+                <div class="select-group" id="tbox1">
+                    <input type="radio" name="satisfaction" value="yes" id="yes">
+                    <label for="yes">Yes</label>
+                </div>
+                <div class="select-group" id="tbox2">
+                    <input type="radio" name="satisfaction" value="no" id="no">
+                    <label for="no">No</label>
+                </div>
+            </div><br>
+            <div class="dropdown-group">
+                <div class="tbox1"><label for="satisfaction" id="satisfaction-label">If No, please select
+                        reason.</label>
+                </div>
+                <div class="tbox2">
+                    <select name="department" id="department-label">
+                        <option value selected disabled>Select reason</option>
+                        <option value="satisoption1">Food Quality provided</option>
+                        <option value="satisoption2">Price of meal provided</option>
+                        <option value="satisoption3">Quality of the staff service provided</option>
+                    </select>
+                </div>
+            </div><br>
+        </fieldset>
+        <fieldset class="form-group-fieldset" form="survey-form">
+            <legend>Food Quality</legend>
+            <div class="disc">
+                <br>
+                <p>How would you rate the quality of the food provided?</p><br>
+            </div>
+            <div class="quality-grade">
+                <div class="box1"></div>
+                <div class="box2">Poor</div>
+                <div class="box3">Fair</div>
+                <div class="box4">Good</div>
+                <div class="box5">Excellent</div>
+            </div>
+            <div class="matrix-group">
+                <div class="box1">
+                    <label for="quality-matrix">Menu Choices</label>
+                </div>
+                <div class="box2">
+                    <input type="radio" name="food-variety" value="poor" id="quality-matrix">
+                </div>
+                <div class="box3">
+                    <input type="radio" name="food-variety" value="fair" id="quality-matrix">
+                </div>
+                <div class="box4">
+                    <input type="radio" name="food-variety" value="good" id="quality-matrix">
+                </div>
+                <div class="box5">
+                    <input type="radio" name="food-variety" value="excellent" id="quality-matrix">
+                </div>
+            </div>
+            <div class="matrix-group">
+                <div class="box1">
+                    <label for="quality-matrix">Healthy menu</label>
+                </div>
+                <div class="box2">
+                    <input type="radio" name="healthy-variety" value="poor" id="quality-matrix">
+                </div>
+                <div class="box3">
+                    <input type="radio" name="healthy-variety" value="fair" id="quality-matrix">
+                </div>
+                <div class="box4">
+                    <input type="radio" name="healthy-variety" value="good" id="quality-matrix">
+                </div>
+                <div class="box5">
+                    <input type="radio" name="healthy-variety" value="excellent" id="quality-matrix">
+                </div>
+            </div>
+            <div class="matrix-group">
+                <div class="box1">
+                    <label for="quality-matrix">Flavorful food</label>
+                </div>
+                <div class="box2">
+                    <input type="radio" name="flavor" value="poor" id="quality-matrix">
+                </div>
+                <div class="box3">
+                    <input type="radio" name="flavor" value="fair" id="quality-matrix">
+                </div>
+                <div class="box4">
+                    <input type="radio" name="flavor" value="good" id="quality-matrix">
+                </div>
+                <div class="box5">
+                    <input type="radio" name="flavor" value="excellent" id="quality-matrix">
+                </div>
+            </div>
+            <div class="matrix-group">
+                <div class="box1">
+                    <label for="quality-matrix">Food Freshness</label>
+                </div>
+                <div class="box2">
+                    <input type="radio" name="freshness" value="poor" id="quality-matrix">
+                </div>
+                <div class="box3">
+                    <input type="radio" name="freshness" value="fair" id="quality-matrix">
+                </div>
+                <div class="box4">
+                    <input type="radio" name="freshness" value="good" id="quality-matrix">
+                </div>
+                <div class="box5">
+                    <input type="radio" name="freshness" value="excellent" id="quality-matrix">
+                </div>
+            </div><br>
+        </fieldset>
+        <fieldset class="form-group-fieldset" form="survey-form">
+            <legend>Food Price</legend>
+            <div class="disc">
+                <br>
+                <p>How would you rate the price of the food items provided?</p><br>
+            </div>
+            <div class="quality-grade">
+                <div class="box1"></div>
+                <div class="box2">Poor</div>
+                <div class="box3">Fair</div>
+                <div class="box4">Good</div>
+                <div class="box5">Excellent</div>
+            </div>
+            <div class="matrix-group">
+                <div class="box1">
+                    <label for="quality-matrix">Affordability</label>
+                </div>
+                <div class="box2">
+                    <input type="radio" name="price" value="poor" id="quality-matrix">
+                </div>
+                <div class="box3">
+                    <input type="radio" name="prices" value="fair" id="quality-matrix">
+                </div>
+                <div class="box4">
+                    <input type="radio" name="price" value="good" id="quality-matrix">
+                </div>
+                <div class="box5">
+                    <input type="radio" name="price" value="excellent" id="quality-matrix">
+                </div>
+            </div>
+            <div class="matrix-group">
+                <div class="box1">
+                    <label for="quality-matrix">Taste worthiness</label>
+                </div>
+                <div class="box2">
+                    <input type="radio" name="worth" value="poor" id="quality-matrix">
+                </div>
+                <div class="box3">
+                    <input type="radio" name="worth" value="fair" id="quality-matrix">
+                </div>
+                <div class="box4">
+                    <input type="radio" name="worth" value="good" id="quality-matrix">
+                </div>
+                <div class="box5">
+                    <input type="radio" name="worth" value="excellent" id="quality-matrix">
+                </div>
+            </div>
+            <div class="matrix-group">
+                <div class="box1">
+                    <label for="quality-matrix">Amount of Servings</label>
+                </div>
+                <div class="box2">
+                    <input type="radio" name="serving-qty" value="poor" id="quality-matrix">
+                </div>
+                <div class="box3">
+                    <input type="radio" name="serving-qty" value="fair" id="quality-matrix">
+                </div>
+                <div class="box4">
+                    <input type="radio" name="serving-qty" value="good" id="quality-matrix">
+                </div>
+                <div class="box5">
+                    <input type="radio" name="serving-qty" value="excellent" id="quality-matrix">
+                </div>
+            </div><br>
+        </fieldset>
+        <fieldset class="form-group-fieldset" form="survey-form">
+            <legend>Staff Service</legend>
+            <div class="disc">
+                <br>
+                <p>How would you rate the Quality of service?</p><br>
+            </div>
+            <div class="quality-grade">
+                <div class="box1"></div>
+                <div class="box2">Poor</div>
+                <div class="box3">Fair</div>
+                <div class="box4">Good</div>
+                <div class="box5">Excellent</div>
+            </div>
+            <div class="matrix-group">
+                <div class="box1">
+                    <label for="quality-matrix">Attitude</label>
+                </div>
+                <div class="box2">
+                    <input type="radio" name="attitude" value="poor" id="quality-matrix">
+                </div>
+                <div class="box3">
+                    <input type="radio" name="attitude" value="fair" id="quality-matrix">
+                </div>
+                <div class="box4">
+                    <input type="radio" name="attitude" value="good" id="quality-matrix">
+                </div>
+                <div class="box5">
+                    <input type="radio" name="attitude" value="excellent" id="quality-matrix">
+                </div>
+            </div>
+            <div class="matrix-group">
+                <div class="box1">
+                    <label for="quality-matrix">Timeliness</label>
+                </div>
+                <div class="box2">
+                    <input type="radio" name="speed" value="poor" id="quality-matrix">
+                </div>
+                <div class="box3">
+                    <input type="radio" name="speed" value="fair" id="quality-matrix">
+                </div>
+                <div class="box4">
+                    <input type="radio" name="speed" value="good" id="quality-matrix">
+                </div>
+                <div class="box5">
+                    <input type="radio" name="speed" value="excellent" id="quality-matrix">
+                </div>
+            </div>
+
+            <div class="matrix-group">
+                <div class="box1">
+                    <label for="quality-matrix">Friendliness</label>
+                </div>
+                <div class="box2">
+                    <input type="radio" name="friendly" value="poor" id="quality-matrix">
+                </div>
+                <div class="box3">
+                    <input type="radio" name="friendly" value="fair" id="quality-matrix">
+                </div>
+                <div class="box4">
+                    <input type="radio" name="friendly" value="good" id="quality-matrix">
+                </div>
+                <div class="box5">
+                    <input type="radio" name="friendly" value="excellent" id="quality-matrix">
+                </div>
+            </div>
+            <div class="matrix-group">
+                <div class="box1">
+                    <label for="quality-matrix">Efficiency</label>
+                </div>
+                <div class="box2">
+                    <input type="radio" name="efficient" value="poor" id="quality-matrix">
+                </div>
+                <div class="box3">
+                    <input type="radio" name="efficient" value="fair" id="quality-matrix">
+                </div>
+                <div class="box4">
+                    <input type="radio" name="efficient" value="good" id="quality-matrix">
+                </div>
+                <div class="box5">
+                    <input type="radio" name="efficient" value="excellent" id="quality-matrix">
+                </div>
+            </div><br>
+        </fieldset>
+        <br>
+        <div class="form-group">
+            <Div>
+                <label for="satisfaction" id="satisfaction-label">If OTHER, please specify.</label>
+                <input type="text" name="satisfaction" id="satisfaction" placeholder="Specific reason"
+                    autocomplete="off">
+            </Div>
+        </div>
+        <br>
+        <div>
+            <button class="Submit-button" id="Submit">Submit!</button>
+        </div>
+    </form>
+
+</body>
+<footer>
+
+</footer>
+
+</html>
